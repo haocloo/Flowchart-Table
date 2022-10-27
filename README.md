@@ -34,7 +34,7 @@ G22[/"We would suggest you to choose Oval Stefan with 10 seaters as the second c
 COUNT2["counter += 1"]
 
 
-F2 --> |"TRUE"|H1
+F2 --> |"TRUE"|H11
 H11 --> |"TRUE"|G21 --> COUNT2
 H11 --> |"FALSE"|H12
 
