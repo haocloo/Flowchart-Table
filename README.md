@@ -2,6 +2,7 @@
 flowchart TB
 BEGIN(["Start"])
 STOP(["END"])
+
 BEGIN --> B[/"Input templength, width"/]
 B --> C["counter = 0"]
 
