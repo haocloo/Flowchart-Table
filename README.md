@@ -2,6 +2,7 @@
 flowchart TB
 BEGIN(["Start"])
 STOP(["END"])
+ENDREASON[/"Display 'Sorry, the dimension of the hall/room don't fix with <br> the size of tables we have.' </br>"/]
 
 BEGIN --> B[/"Input templength, width"/]
 B --> C["counter = 0"]
@@ -43,4 +44,4 @@ H11 --> |"FALSE"|H12
 H12 --> |"TRUE"|G22 --> COUNT2
 H12 --> |"FALSE"|H13
 
-H13 --> STOP
+H13 --> ENDREASON --> STOP
