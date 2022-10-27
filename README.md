@@ -1,6 +1,7 @@
 ```mermaid
 flowchart TB
 BEGIN(["Start"])
+STOP(["END"])
 BEGIN --> B[/"Input templength, width"/]
 B --> C["counter = 0"]
 
@@ -28,7 +29,7 @@ COUNT1 & G12 --> F2{"length >= 3 && width >= 1.3"}
 
 H11{"counter == 0"}
 H12{"counter == 1"}
-H13{"counter == 2"}
+H13[/"Display the length of hall/room that can fix the table, <br> the width of hall/room that can fix the table </br>"/]
 G21[/"We would suggest you to choose Oval Stefan with 10 seaters as the first choice."/]
 G22[/"We would suggest you to choose Oval Stefan with 10 seaters as the second choice."/]
 COUNT2["counter += 1"]
@@ -40,3 +41,5 @@ H11 --> |"FALSE"|H12
 
 H12 --> |"TRUE"|G22 --> COUNT2
 H12 --> |"FALSE"|H13
+
+H13 --> STOP
