@@ -20,7 +20,7 @@ D1 & D2 --> E["length = round(length * 1000.00) / 1000.0 <br>
                
 E --> F1{"length >= 3 && width >= 1"}
 
-G11[/"Display'We would suggest you to choose Rectangle Shade with 12 seaters as the first choice.'"/]
+G11[/"Display 'We would suggest you to choose Rectangle Shade <br> with 12 seaters as the first choice.' </br>"/]
 COUNT1["counter += 1"]
 
 F1 --> |"TRUE"|G11 --> COUNT1
@@ -31,8 +31,8 @@ COUNT1 & G12 --> F2{"length >= 3 && width >= 1.3"}
 H11{"counter == 0"}
 H12{"counter == 1"}
 H13[/"Display the length of hall/room that can fix the table, <br> the width of hall/room that can fix the table </br>"/]
-G21[/"Display'We would suggest you to choose Oval Stefan with 10 seaters as the first choice.'"/]
-G22[/"Display'We would suggest you to choose Oval Stefan with 10 seaters as the second choice.'"/]
+G21[/"Display 'We would suggest you to choose Oval Stefan <br> with 10 seaters as the first choice.' </br>"/]
+G22[/"Display 'We would suggest you to choose Oval Stefan <br> with 10 seaters as the second choice.' </br>"/]
 COUNT2["counter += 1"]
 
 
