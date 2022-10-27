@@ -13,8 +13,7 @@ D --> |"TRUE"|D1
 
 D --> |"FALSE"|D2
 
-|"TRUE"|D1 --> E["length = round(length * 1000.00) / 1000.0 <br>
-   width = round(width * 1000.00) / 1000.0 </br>"]
-|"FALSE"|D2 --> E["length = round(length * 1000.00) / 1000.0 <br>
-   width = round(width * 1000.00) / 1000.0 </br>"]
+D1 & D2 --> E["length = round(length * 1000.00) / 1000.0 <br>
+               width = round(width * 1000.00) / 1000.0 </br>"]
+
 
