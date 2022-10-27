@@ -24,7 +24,7 @@ COUNT1["counter += 1"]
 F1 --> |"TRUE"|G11 --> COUNT1
 F1 --> |"FALSE"|G12
 
-COUNT1 & G2 --> F2{"length >= 3 && width >= 1.3"}
+COUNT1 & G12 --> F2{"length >= 3 && width >= 1.3"}
 
 H11{"counter == 0"}
 H12{"counter == 1"}
